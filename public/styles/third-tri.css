@@ -1,0 +1,118 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff; /* Light blue background */
+      color: #333;
+    }
+
+    header {
+      background-color: #5ab9ea; /* Soft blue header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5ab9ea;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #3090c7;
+    }
+
+    .tracker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .tracker button {
+      padding: 8px 10px;
+      border: none;
+      background: #d3efff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .tracker button.active {
+      background: #5ab9ea;
+      color: white;
+      font-weight: bold;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .week {
+      width: 70%;
+      margin-bottom: 20px;
+      background: white;
+      padding: 15px;
+      border-left: 5px solid #5ab9ea;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .symptoms ul {
+      padding-left: 20px;
+    }
+
+    .tips {
+      background: #e0f5ff;
+      border-left: 5px solid #5ab9ea;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    .faq-item {
+      background: white;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .faq-question {
+      padding: 10px;
+      background: #d3efff;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      background: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .week {
+        width: 100%;
+      }
+    }

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurtureNest - Pregnancy & Baby Care Nutrition</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <!-- Header -->
+   <header>
+  <div class="container">
+    <div class="flex justify-between items-center py-4">
+      <div class="logo">
+        <span class="logo-icon">❤️</span>
+        <span>Nutrient Nest</span>
+      </div>
+      <nav class="flex">
+        <ul class="flex gap-4">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#pregnancy">Pregnancy</a></li>
+          <li><a href="#baby-care">Baby Care</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="auth-area" id="auth-area">
+        <h2>Welcome, <span id="user-name"></span>!</h2>
+        <button onclick="logout()" class="logout-button">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Mobile Menu -->
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Nourishing Life from <span style="color: #8b5cf6;">Pregnancy</span> to <span style="color: #3b82f6;">Babyhood</span></h1>
+                    <p>Expert guidance on nutrition and care for expectant mothers and growing babies.</p>
+                    <div class="hero-buttons">
+                        <a href="#pregnancy" class="btn btn-primary">Pregnancy Guide</a>
+                        <a href="#baby-care" class="btn btn-outline">Baby Care Tips</a>
+                    </div>
+                </div>
+                <div class="mom-child-image">
+                    <img  src="images/image1.jpg" alt="Mother and baby">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="section-title">Smart Features for Parents</h2>
+                <p class="section-subtitle">Comprehensive tools to support your journey through pregnancy and early parenthood.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- AI Pregnancy Aid -->
+                <div onclick="navigateTo('chatbot.html')" class="feature-card">
+                    <div class="feature-icon" style="background-color: #fdf2f8;">
+                        <span style="color: #ec4899;">🤖</span>
+                    </div>
+                    <h3 class="feature-title">AI Pregnancy Aid</h3>
+                    <p class="feature-description">Daily check-ins, health tips, and trimester-specific advice, with real-time, empathetic responses to pregnancy questions.</p>
+                </div>
+
+                <!-- Mood & Mental Health Tracker -->
+                <div onclick="navigateTo('mental-health.html')" class="feature-card">
+                    <div class="feature-icon" style="background-color: #ede9fe;">
+                        <span style="color: #8b5cf6;">😊</span>
+                    </div>
+                    <h3 class="feature-title">Mood & Mental Health Tracker</h3>
+                    <p class="feature-description">Tracks emotions, provides affirmations, meditation, and access to professional help if needed.</p>
+                </div>
+
+                <!-- Pregnancy Nutrition Planner -->
+                <div onclick="navigateTo('nutri.html')" class="feature-card">
+                    <div class="feature-icon" style="background-color: #e0f2fe;">
+                        <span style="color: #0ea5e9;">🥗</span>
+                    </div>
+                    <h3 class="feature-title">Pregnancy Nutrition Planner</h3>
+                    <p class="feature-description">Custom meal plans, recipes, and grocery lists based on dietary preferences and health history.</p>
+                </div>
+
+                <!-- Baby Vaccine Tracker -->
+                <div onclick="navigateTo('vaccine.html')" class="feature-card">
+                    <div class="feature-icon" style="background-color: #dcfce7;">
+                        <span style="color: #22c55e;">💉</span>
+                    </div>
+                    <h3 class="feature-title">Baby Vaccine Tracker</h3>
+                    <p class="feature-description">Personalized vaccine schedule with reminders and easy-to-understand explanations.</p>
+                </div>
+
+                <!-- Baby Health & Food Monitor -->
+                <div onclick="navigateTo('baby-food.html')" class="feature-card">
+                    <div class="feature-icon" style="background-color: #fff7ed;">
+                        <span style="color: #f97316;">👶</span>
+                    </div>
+                    <h3 class="feature-title">Baby Health & Food Monitor</h3>
+                    <p class="feature-description">Tracks feeding schedules, allergies, and growth, offering nutrient-rich food recommendations.</p>
+                </div>
+
+                <!-- Eco-Friendly Baby Products Guide -->
+                <div onclick="navigateTo('eco-friend.html')" class="feature-card">
+                    <div class="feature-icon" style="background-color: #ecfdf5;">
+                        <span style="color: #10b981;">🌱</span>
+                    </div>
+                    <h3 class="feature-title">Eco-Friendly Products Guide</h3>
+                    <p class="feature-description">Recommends safe, eco-friendly baby products and uses a barcode scanner to check ingredients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pregnancy Section -->
+    <section id="pregnancy" class="pregnancy">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="section-title">Pregnancy stages</h2>
+                <p class="section-subtitle">Proper nutrition during pregnancy is crucial for both mother and baby's health. Discover what nutrients you need at each stage.</p>
+            </div>
+
+            <div class="trimester-cards">
+                <!-- First Trimester Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="card-icon">❤️</span>
+                            First Trimester
+                        </h3>
+                        <p class="card-description">Building foundations for your baby</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="relative rounded-md overflow-hidden mb-4" style="height: 200px;">
+                            <img src="images/first-tri.jpg" alt="First trimester nutrition" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <ul class="space-y-2">
+                            <li class="list-item">
+                                <span class="list-icon">→</span>
+                                <span>Folic acid for neural tube development</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon">→</span>
+                                <span>Iron to support increased blood volume</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon">→</span>
+                                <span>Managing morning sickness with small meals</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button 
+                        onclick="navigateTo('first-tri.html')"  
+                        class="btn btn-outline" >Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Second Trimester Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="card-icon" style="background-color: #f3e8ff; color: #8b5cf6;">❤️</span>
+                            Second Trimester
+                        </h3>
+                        <p class="card-description">Supporting rapid growth</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="relative rounded-md overflow-hidden mb-4" style="height: 200px;">
+                            <img src="images/second-tri.jpeg" alt="Second trimester nutrition" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <ul class="space-y-2">
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #8b5cf6;">→</span>
+                                <span>Calcium for developing bones and teeth</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #8b5cf6;">→</span>
+                                <span>Omega-3 fatty acids for brain development</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #8b5cf6;">→</span>
+                                <span>Protein for tissue growth and repair</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button 
+                        onclick="navigateTo('second-tri.html')"
+                        class="btn btn-outline"  >Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Third Trimester Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="card-icon" style="background-color: #dbeafe; color: #3b82f6;">❤️</span>
+                            Third Trimester
+                        </h3>
+                        <p class="card-description">Preparing for birth and beyond</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="relative rounded-md overflow-hidden mb-4" style="height: 200px;">
+                            <img src="images/third-tri.jpg" alt="Third trimester nutrition" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <ul class="space-y-2">
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">→</span>
+                                <span>Vitamin D for immune system development</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">→</span>
+                                <span>Zinc for cell growth and immune function</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">→</span>
+                                <span>Healthy fats for baby's brain development</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button 
+                        onclick="navigateTo('third-tri.html')"
+                        class="btn btn-outline" >Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Baby Care Section -->
+    <section id="baby-care" class="baby-care">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="section-title" style="color: #1d4ed8;">Baby Nutrition & Care</h2>
+                <p class="section-subtitle">From breastfeeding to introducing solids, learn how to provide optimal nutrition for your growing baby.</p>
+            </div>
+
+            <div class="tabs">
+                <div class="tabs-list">
+                    <div class="tab-trigger active" data-tab="newborn">Newborn (0-3 months)</div>
+                    <div class="tab-trigger" data-tab="infant">Infant (4-6 months)</div>
+                    <div class="tab-trigger" data-tab="baby">Baby (7-12 months)</div>
+                </div>
+
+                <!-- Newborn Tab -->
+                <div id="newborn-tab" class="tab-content">
+                    <div class="container">
+                    <div class="tab-image">
+                        <img src="images/baby-care.webp" alt="Newborn care">
+                    </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1d4ed8;">Newborn Nutrition</h3>
+                        <p>Breast milk or formula provides all the nutrition your newborn needs. Learn about feeding schedules, proper latch techniques, and how to ensure your baby is getting enough nutrition.</p>
+                        <ul class="space-y-3">
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">👶</span>
+                                <span>Breastfeeding basics and benefits</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">👶</span>
+                                <span>Formula feeding guidelines</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">👶</span>
+                                <span>Recognizing hunger and fullness cues</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn-blue">Newborn Care Guide</button>
+                    </div>
+                </div>
+
+                <!-- Infant Tab -->
+                <div id="infant-tab" class="tab-content">
+                    <div class="container">
+                    <div class="tab-image">
+                        <img  src="images/infant.jpg" alt="Infant care" >
+                    </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1d4ed8;">Infant Nutrition</h3>
+                        <p>As your baby grows, they may be ready to start exploring solid foods. Learn about signs of readiness and how to introduce first foods safely.</p>
+                        <ul class="space-y-3">
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">🍎</span>
+                                <span>Signs your baby is ready for solids</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">🍎</span>
+                                <span>First foods to introduce</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">🍎</span>
+                                <span>Balancing breast milk/formula with solids</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn-blue">Infant Care Guide</button>
+                    </div>
+                </div>
+
+                <!-- Baby Tab -->
+                <div id="baby-tab" class="tab-content">
+                  <div class="container">
+                    <div class="tab-image">
+                        <img src="images/baby-nutri.jpg" alt="Baby care">
+                    </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #1d4ed8;">Baby Nutrition</h3>
+                        <p>Your baby is now ready for a wider variety of foods and textures. Learn about balanced nutrition and developing healthy eating habits.</p>
+                        <ul class="space-y-3">
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">🍎</span>
+                                <span>Introducing protein sources and textures</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">🍎</span>
+                                <span>Self-feeding and finger foods</span>
+                            </li>
+                            <li class="list-item">
+                                <span class="list-icon" style="color: #3b82f6;">🍎</span>
+                                <span>Creating balanced meals for your baby</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn-blue">Baby Care Guide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="section-title" style="color: #047857;">Helpful Resources</h2>
+                <p class="section-subtitle">Access our collection of guides, meal plans, and expert advice to support your journey.</p>
+            </div>
+
+            <div class="resource-cards">
+                <!-- Meal Plans Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="list-icon" style="color: #047857;">📚</span>
+                            Meal Plans
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <p style="color: #4b5563;">Balanced meal plans for each trimester and baby age group.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline" style="width: 100%; border-color: #047857; color: #047857;">Download</button>
+                    </div>
+                </div>
+
+                <!-- Barcode Scanner Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="list-icon" style="color: #047857;">📱</span>
+                            Barcode Scanner
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <p style="color: #4b5563;">Scan product barcodes to check ingredients and safety for pregnancy and babies.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button id="open-scanner-btn" class="btn btn-outline" style="width: 100%; border-color: #047857; color: #047857;">Open Scanner</button>
+                    </div>
+                </div>
+
+                <!-- Growth Trackers Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="list-icon" style="color: #047857;">📊</span>
+                            Growth Trackers
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <p style="color: #4b5563;">Tools to monitor your baby's growth and development milestones.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline" style="width: 100%; border-color: #047857; color: #047857;">Access Tools</button>
+                    </div>
+                </div>
+
+                <!-- Expert Q&A Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <span class="list-icon" style="color: #047857;">💬</span>
+                            Expert Q&A
+                        </h3>
+                    </div>
+                    <div class="card-content">
+                        <p style="color: #4b5563;">Answers to common questions from nutritionists and pediatricians.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-outline" style="width: 100%; border-color: #047857; color: #047857;">Read Answers</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barcode Scanner Modal -->
+    <div id="scanner-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 100; justify-content: center; align-items: center;">
+        <div style="background-color: white; border-radius: 0.5rem; width: 90%; max-width: 600px; padding: 2rem; position: relative;">
+            <button id="close-scanner-btn" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer;">✕</button>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #047857; margin-bottom: 1rem;">Product Barcode Scanner</h3>
+            <p style="color: #4b5563; margin-bottom: 1.5rem;">Scan a product barcode to check ingredients and safety for pregnancy and babies.</p>
+            
+            <div class="scanner-container">
+                <div id="barcode-scanner"></div>
+                <div id="barcode-result">
+                    <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Scan Result:</h4>
+                    <p id="result-text"></p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem; display: flex; justify-content: center;">
+                <button id="start-scanner-btn" class="btn btn-primary">Start Scanner</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <p class="section-subtitle">Subscribe to our newsletter for weekly tips, recipes, and expert advice on pregnancy and baby nutrition.</p>
+            
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <span class="footer-logo-icon">❤️</span>
+                        <span>Nutrient Nest</span>
+                    </div>
+                    <p class="footer-text">Supporting parents with expert nutrition guidance from pregnancy through early childhood.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#pregnancy">Pregnancy</a></li>
+                        <li><a href="#baby-care">Baby Care</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Meal Plans</a></li>
+                        <li><a href="#">Barcode Scanner</a></li>
+                        <li><a href="#">Expert Advice</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Nutrient Nest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QuaggaJS for Barcode Scanning -->
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="scripts/post.js"></script>
+        
+       
+    
+</body>
+</html>

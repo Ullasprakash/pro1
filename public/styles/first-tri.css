@@ -1,0 +1,101 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef9f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #f88f8f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    nav {
+      background: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f88f8f;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #e06a6a;
+    }
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .week {
+      width: 70%;
+      display: block;
+
+      flex: 1 1 100%;
+      background: #fff;
+      padding: 10px;
+      border-left: 4px solid #f88f8f;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      
+    }
+    .faq-item {
+      background: #fff;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .faq-question {
+      padding: 10px;
+      background: #ffeaea;
+      cursor: pointer;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      background: #fff;
+    }
+    .tips {
+      background: #fff6f6;
+      padding: 15px;
+      border-left: 5px solid #f88f8f;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    .tracker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+    .tracker button {
+      padding: 8px;
+      border: none;
+      background: #ffdcdc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .tracker button.active {
+      background: #f88f8f;
+      color: white;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .week {
+        flex: 1 1 100%;
+      }
+    }
